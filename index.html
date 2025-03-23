@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online percentage calculator tool - Calculate percentage of a number, percentage increase/decrease, and percentage change quickly and accurately.">
+    <meta name="keywords" content="percentage calculator, percent calculator, calculate percentage, percentage increase calculator, percentage decrease calculator, percentage change calculator, free online calculator, free percent calculator, calculate percentage online, how to calculate percentage increase, percentage change calculator free">
+    <meta name="author" content="PercentMaster">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="PercentMaster - Ultimate Percentage Calculator">
+    <meta property="og:description" content="Fast and accurate percentage calculations for all your needs. Try our free online percentage calculator now!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.percentmaster.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://www.percentmaster.com">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="google-site-verification" content="g3Ng20yK3nEDdPX3HQz0qMQns-gv_xlyAPAzj6K31Fs" />
+    <title>PercentMaster - Free Online Percentage Calculator Tool</title>
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://www.percentmaster.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K6X7QZ5R');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google AdSense  -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9838408610442741" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6PTK04B0Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-E6PTK04B0Q');
+    </script>
+    <script>
+        window.acceptrics = {};
+        localStorage.setItem("__acceptrics_conf", JSON.stringify({"gcmAdvanced":"true","backgroundColor":"#080808","fontColor":"#ffffff","geoArea":"worldwide","accountNum":"p67i3ibr","useTranslation":true,"bannerStyle":""})); document.addEventListener("__acceptrics_loaded", () =>{window.acceptrics.initializeSettings();});
+        </script>
+        <script src="https://cdn.acceptrics.com?n=p67i3ibr"></script>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            padding: 40px;
+            font-family: 'Arial', sans-serif;
+        }
+        .calculator-section {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .calculator-section:hover {
+            transform: translateY(-5px);
+        }
+        .form-control, .btn {
+            transition: all 0.3s ease;
+        }
+        .result-box {
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        #calc1 { background-color: #e3f2fd; }
+        #calc2 { background-color: #fce4ec; }
+        #calc3 { background-color: #e8f5e9; }
+        #calc4 { background-color: #fff3e0; }
+        #calc5 { background-color: #f3e5f5; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6X7QZ5R"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="text-center mb-4">
+            <h1> <img width="50" src="./assets/logo.png" alt="logo"> PercentMaster - Free Online Percentage Calculator</h1>
+            <span>Use our free percentage calculator to solve math problems instantly!</span>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Same calculator sections as before -->
+        <div class="calculator-section" id="calc1">
+            <h2 class="h5 mb-3">What is <span class="fw-bold">X%</span> of <span class="fw-bold">Y</span>?</h2>
+            <div class="row g-3">
+                <div class="col-md-3"><input type="number" class="form-control" id="percent1" placeholder="Percentage" aria-label="Percentage"></div>
+                <div class="col-md-3"><input type="number" class="form-control" id="number1" placeholder="Number" aria-label="Number"></div>
+                <div class="col-md-3"><button class="btn btn-primary w-100" onclick="calculatePercentage();">Calculate</button></div>
+                <div class="col-md-3"><button class="btn btn-clear w-100" onclick="clearCalculator('percent1', 'number1', 'result1')">Clear</button></div>
+            </div>
+            <div class="result-box" id="result1"><p class="mb-0">Result: <span id="answer1" class="fw-bold"></span></p></div>
+        </div>
+
+        <div class="calculator-section" id="calc2">
+            <h2 class="h5 mb-3"><span class="fw-bold">X</span> is what percent of <span class="fw-bold">Y</span>?</h2>
+            <div class="row g-3">
+                <div class="col-md-3"><input type="number" class="form-control" id="number2" placeholder="Number" aria-label="Number"></div>
+                <div class="col-md-3"><input type="number" class="form-control" id="number3" placeholder="Of" aria-label="Of"></div>
+                <div class="col-md-3"><button class="btn btn-primary w-100" onclick="calculateWhatPercent()">Calculate</button></div>
+                <div class="col-md-3"><button class="btn btn-clear w-100" onclick="clearCalculator('number2', 'number3', 'result2')">Clear</button></div>
+            </div>
+            <div class="result-box" id="result2"><p class="mb-0">Result: <span id="answer2" class="fw-bold"></span>%</p></div>
+        </div>
+
+        <div class="calculator-section" id="calc3">
+            <h2 class="h5 mb-3">What is <span class="fw-bold">X%</span> more than <span class="fw-bold">Y</span>?</h2>
+            <div class="row g-3">
+                <div class="col-md-3"><input type="number" class="form-control" id="percent3" placeholder="Percentage" aria-label="Percentage"></div>
+                <div class="col-md-3"><input type="number" class="form-control" id="number4" placeholder="Number" aria-label="Number"></div>
+                <div class="col-md-3"><button class="btn btn-primary w-100" onclick="calculatePercentMore()">Calculate</button></div>
+                <div class="col-md-3"><button class="btn btn-clear w-100" onclick="clearCalculator('percent3', 'number4', 'result3')">Clear</button></div>
+            </div>
+            <div class="result-box" id="result3"><p class="mb-0">Result: <span id="answer3" class="fw-bold"></span></p></div>
+        </div>
+
+        <div class="calculator-section" id="calc4">
+            <h2 class="h5 mb-3">What is <span class="fw-bold">X%</span> less than <span class="fw-bold">Y</span>?</h2>
+            <div class="row g-3">
+                <div class="col-md-3"><input type="number" class="form-control" id="percent4" placeholder="Percentage" aria-label="Percentage"></div>
+                <div class="col-md-3"><input type="number" class="form-control" id="number5" placeholder="Number" aria-label="Number"></div>
+                <div class="col-md-3"><button class="btn btn-primary w-100" onclick="calculatePercentLess()">Calculate</button></div>
+                <div class="col-md-3"><button class="btn btn-clear w-100" onclick="clearCalculator('percent4', 'number5', 'result4')">Clear</button></div>
+            </div>
+            <div class="result-box" id="result4"><p class="mb-0">Result: <span id="answer4" class="fw-bold"></span></p></div>
+        </div>
+
+        <div class="calculator-section" id="calc5">
+            <h2 class="h5 mb-3">Percentage change from <span class="fw-bold">X</span> to <span class="fw-bold">Y</span></h2>
+            <div class="row g-3">
+                <div class="col-md-3"><input type="number" class="form-control" id="number6" placeholder="Old Value" aria-label="Old Value"></div>
+                <div class="col-md-3"><input type="number" class="form-control" id="number7" placeholder="New Value" aria-label="New Value"></div>
+                <div class="col-md-3"><button class="btn btn-primary w-100" onclick="calculatePercentChange()">Calculate</button></div>
+                <div class="col-md-3"><button class="btn btn-clear w-100" onclick="clearCalculator('number6', 'number7', 'result5')">Clear</button></div>
+            </div>
+            <div class="result-box" id="result5"><p class="mb-0">Result: <span id="answer5" class="fw-bold"></span>%</p></div>
+        </div>
+
+        <div class="about-content">
+            <div class="content">
+                <h1>How to Use PercentMaster - Percentage Calculator Help.</h1>
+                <p>Welcome to the Help section! Here’s how to make the most of our percentage calculator tool.</p>
+        
+                <h2>1. Basic Usage</h2>
+                <p>Enter numbers in the provided fields and click "Calculate" to get instant results. All calculations happen in your browser—no data is stored.</p>
+        
+                <h2>2. Available Calculators</h2>
+                <ul>
+                    <li><strong>X% of Y:</strong> Find what percentage of a number is (e.g., 25% of 200).</li>
+                    <li><strong>X is what % of Y:</strong> Determine what percentage one number is of another.</li>
+                    <li><strong>X% more than Y:</strong> Calculate a value increased by a percentage.</li>
+                    <li><strong>X% less than Y:</strong> Calculate a value decreased by a percentage.</li>
+                    <li><strong>Percentage Change:</strong> Find the percentage difference between two values.</li>
+                </ul>
+        
+                <h2>3. Tips</h2>
+                <ul>
+                    <li>Use positive or negative numbers as needed.</li>
+                    <li>Results are rounded to 2 decimal places for clarity.</li>
+                    <li>If you get an error, ensure all fields have valid numbers.</li>
+                </ul>
+        
+                <h2>4. Need More Help?</h2>
+                <p>Email us at <a href="mailto:support@percentmaster.com">support@percentmaster.com</a> with any questions!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - <script>document.write(new Date().getFullYear());</script> PercentMaster. All rights reserved. | 
+            <a href="./privacy-policy.html">Privacy Policy</a> | 
+            <a href="./terms.html">Terms of Use</a> |
+            <a href="./about.html">About</a> | 
+            <a href="./blog.html">Blog</a> | 
+            <a href="./faq.html">FAQ</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/script.js?v=1.0.5"></script>
+</body>
+</html>
