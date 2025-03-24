@@ -1,0 +1,4 @@
+RewriteEngine On
+    
+    RewriteCond %{HTTP_HOST} ^www\.percentmaster\.com$
+    RewriteRule ^/?$ "http\:\/\/percentmaster\.com\/" [R=301,L]
